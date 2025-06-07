@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
     net-tools \
     iputils-ping \
     curl \
+    netcat-openbsd \
     lsof \
     procps \
     && rm -rf /var/lib/apt/lists/*
