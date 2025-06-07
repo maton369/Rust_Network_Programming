@@ -5,7 +5,6 @@ ENV USER=root \
     CARGO_HOME=/usr/local/cargo \
     PATH=/usr/local/cargo/bin:$PATH
 
-# 基本的なネットワークツールなどを追加
 RUN apt-get update && apt-get install -y \
     dnsutils \
     net-tools \
