@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  rust:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rust_dev_env
+    volumes:
+      - ./rust-projects:/projects
+    working_dir: /projects
+    tty: true
