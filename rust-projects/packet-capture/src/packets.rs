@@ -1,3 +1,9 @@
+use pnet::packet::ipv4::Ipv4Packet;
+use pnet::packet::ipv6::Ipv6Packet;
+use pnet::packet::tcp::TcpPacket;
+use pnet::packet::udp::UdpPacket;
+use pnet::packet::Packet;
+
 pub trait GettableEndPoints {
     fn get_source(&self) -> String;
     fn get_destination(&self) -> String;
